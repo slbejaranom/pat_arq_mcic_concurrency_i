@@ -1,3 +1,5 @@
+package CriticalSection;
+
 public class FileLogger implements Logger {
   private static FileLogger logger;
 

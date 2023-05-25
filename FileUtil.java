@@ -1,3 +1,5 @@
+package CriticalSection;
+
 import java.io.*;
 import java.util.*;
 
@@ -106,18 +108,6 @@ public class FileUtil {
       writeToFile(fileName, (String) v.elementAt(i), true,
                   true);
     }
-  }
-
-  /*
-     Copies unique rows from a source file 
-     to a destination file
-  */
-
-  public void copyUniqueElements(String sourceFile,
-      String resultFile) {
-    Vector v = fileToVector(sourceFile);
-    v = MiscUtil.removeDuplicates(v);
-    vectorToFile(v, resultFile);
   }
 
 } // end FileUtil
